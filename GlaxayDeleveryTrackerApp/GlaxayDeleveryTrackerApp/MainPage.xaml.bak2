@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GlaxayDeleveryTrackerApp.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="배송조회"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <ScrollView>
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="        배송회사를 선택하고" />
+                    <Label Text="      운송장번호를 입력하세요" />
+                    <Picker x:Name="pk1_company" Title="배송회사" SelectedIndexChanged="Picker_SelectedIndexChanged_deleivery" >
+                    <!--    
+                        <Picker.Items>
+                            <x:String>DHL</x:String>
+                            <x:String>Sagawa</x:String>
+                            <x:String>Kuroneko</x:String>
+                            <x:String>Japan Post</x:String>
+                            <x:String>천일택배</x:String>
+                            <x:String>CJ대한통운</x:String>
+                            <x:String>CU편의점택배</x:String>
+                            <x:String>GS Postbox택배</x:String>
+                            <x:String>CWAY</x:String>
+                            <x:String>대신택배</x:String>
+
+                            <x:String>우체국택배</x:String>
+                            <x:String>한의사랑택배</x:String>
+                            <x:String>한진택배</x:String>
+                            <x:String>합동택배</x:String>
+                            <x:String>홈픽</x:String>
+                            <x:String>한서호남택배</x:String>
+                            <x:String>일양로지스</x:String>
+                            <x:String>경동택배</x:String>
+                            <x:String>건영택배</x:String>
+                            <x:String>로젠택배</x:String>
+
+                            <x:String>롯데택배</x:String>
+                            <x:String>SLX</x:String>
+                            <x:String>성원글로벌카고</x:String>
+                            <x:String>TNT</x:String>
+                            <x:String>EMS</x:String>
+
+                            <x:String>Fedex</x:String>
+                            <x:String>UPS</x:String>
+                            <x:String>USPS</x:String>
+
+                        </Picker.Items>
+                    -->
+                        <Picker.Items>
+                            <x:String>CJ대한통운</x:String>
+                            <x:String>CU편의점택배</x:String>
+                            <x:String>GS Postbox택배</x:String>
+                            <x:String>우체국택배</x:String>
+                            <x:String>한진택배</x:String>
+                            
+                            <x:String>합동택배</x:String>
+                            <x:String>홈픽</x:String>
+                            <x:String>DHL</x:String>
+                            <x:String>Fedex</x:String>
+                            <x:String>EMS</x:String>
+                            
+                            <x:String>UPS</x:String>
+                            <x:String>USPS</x:String>
+                            <x:String>대신택배</x:String>
+                            <x:String>한서호남택배</x:String>
+                            <x:String>일양로지스</x:String>
+                            
+                            <x:String>경동택배</x:String>
+                            <x:String>건영택배</x:String>
+                            <x:String>로젠택배</x:String>
+                            <x:String>롯데택배</x:String>
+                            <x:String>한의사랑택배</x:String>
+                            
+                            <x:String>Sagawa</x:String>
+                            <x:String>Kuroneko</x:String>
+                            <x:String>Japan Post</x:String>
+                            <x:String>천일택배</x:String>
+                            <x:String>CWAY</x:String>
+                            
+                            <x:String>SLX</x:String>
+                            <x:String>성원글로벌카고</x:String>
+                            <x:String>TNT</x:String>
+
+                        </Picker.Items>
+                    </Picker>
+
+                    <Entry x:Name="et_number" Placeholder="             운송장번호" 
+                           Keyboard="Numeric"
+                           HorizontalOptions="CenterAndExpand" />
+
+                    <Button x:Name="bt_search" Text="배송조회"
+                            Clicked="bt_search_Clicked" />
+
+                    <Label x:Name="trackState" Text="현재 배송 상태" 
+                           HorizontalOptions="CenterAndExpand" />
+
+                    <Button x:Name="bt_company" Text="(c)FreeNanum"
+                            Clicked="bt_company_Clicked" />
+                </StackLayout>
+                
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
