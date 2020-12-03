@@ -105,11 +105,11 @@ namespace GlaxayDeleveryTrackerApp
             await DisplayAlert("(c)FreeNanum", "freeNanum.github.io/market", "확인");
         }
 
-        private void Picker_SelectedIndexChanged_deleivery(object sender, EventArgs e)
+        public void Picker_SelectedIndexChanged_deleivery(object sender, EventArgs e)
         {
-            String localCompanyCode = companyNametoCode[pk_company.SelectedIndex];
+            String localCompanyCode = companyNametoCode[pk1_company.SelectedIndex];
 
-            if (pk_company.SelectedIndex == -1)
+            if (pk1_company.SelectedIndex == -1)
             {
                 companyCode = "";
             }
@@ -124,7 +124,7 @@ namespace GlaxayDeleveryTrackerApp
         static readonly HttpClient client = new HttpClient();
         static string responseBody;
 
-#if false //Json structure
+#if false //Json sample structure.
 {
    "from": {
       "name": "알*",
@@ -263,8 +263,87 @@ namespace GlaxayDeleveryTrackerApp
             public string Message { get; set; }
         }
 
+#if FirstMethod
         public bool JsonParse(string responseBody)
         {
+            JArray array = JArray.Parse(responseBody);
+            foreach (JObject item in array.Children<JObject>())
+            {
+                //Console.WriteLine("AnimalId: " + item["message"]);
+                if (!string.IsNullOrWhiteSpace(item["message"].ToString()))
+                {
+                    //DbgMsg = tMessage.Pmessage;
+                    DbgMsg = string.Format("잘못된 운송장");
+                    return false;
+                }
+#if false
+                //Console.WriteLine("SpeciesCode: " + item["state"]);
+                if (!string.IsNullOrWhiteSpace(item["state"].ToString()))
+                {
+                    //DbgMsg = string.Format("현재 배송 상태");
+                    DbgMsg = item["state"].ToString();
+                    return true;
+                }
+#endif
+
+
+
+#if false
+
+                //Console.WriteLine("SpeciesCode: " + item["state"]);
+                if (!string.IsNullOrEmpty(item["state"].ToString()))
+                {
+                    JArray array2 = JArray.Parse(item["state"].ToString());
+                    foreach (JObject item2 in array2.Children<JObject>())
+                    {
+                        DbgMsg = item2["text"].ToString();   //DbgMsg = string.Format("현재 배송 상태");
+                        return true;
+                    }
+                }
+#endif
+
+#if false
+                //Console.WriteLine("SpeciesCode: " + item["state"]);
+                if (!string.IsNullOrEmpty(item["state"].Children().ToString()))
+                {
+                    JArray array2 = JArray.Parse(item["state"].Children().ToString());
+                    foreach (JObject item2 in array2.Children<JObject>())
+                    {
+                        DbgMsg = item2["text"].ToString();   //DbgMsg = string.Format("현재 배송 상태");
+                        return true;
+                    }
+                }
+#endif
+            }
+
+#if false
+            foreach (JObject item in array.Children<JObject>())
+            {
+                //Console.WriteLine("SpeciesCode: " + item["state"]);
+                if (!string.IsNullOrEmpty(item["state"].ToString()))
+                {
+                    JArray array2 = JArray.Parse(item["state"].ToString());
+                    foreach (JObject item2 in array2.Children<JObject>())
+                    {
+                        DbgMsg = item2["text"].ToString();   //DbgMsg = string.Format("현재 배송 상태");
+                        return true;
+                    }
+                }
+            }
+#endif
+
+            DbgMsg = string.Format("응답 오류");
+            //DbgMsg = tmpSccsMessage;
+            return false;
+
+        }
+#endif
+
+#if SecondMethod
+        public bool JsonParse(string responseBody)
+        {
+
+
 #if false// json내 모든 데이터를 파싱
 
                 // Deseialize(JsonString -> Object)
@@ -277,9 +356,11 @@ namespace GlaxayDeleveryTrackerApp
             //JObject jObjErrMsg = JObject.Parse(responseBody);
             JObject jObj = JObject.Parse(responseBody);
             //JsonClassMessage tMessage = JsonConvert.DeserializeObject<JsonClassMessage>(jObjErrMsg.ToString());
+            //DbgMsg = string.Format("디버그중1");
+            
             string tmpMessage = (String)jObj["message"].ToString();
 #endif
-            //DbgMsg = string.Format("디버그중");
+            //DbgMsg = string.Format("디버그중2");
             //DbgMsg = String.Format($"{tMessage.Pmessage}");
             //return false;
 
@@ -292,7 +373,7 @@ namespace GlaxayDeleveryTrackerApp
             }
             else
             {
-                DbgMsg = string.Format("운송장이 존재");
+                //DbgMsg = string.Format("운송장이 존재");
 
 #if false // json내 모든 데이터를 파싱
                     // Deseialize(JsonString -> Object)
@@ -323,7 +404,7 @@ namespace GlaxayDeleveryTrackerApp
                 //List<cProgresses> tProgresses = JsonConvert.DeserializeObject<List<cProgresses>>(jObj["progresses"].ToString());
                 //cCarrier tCarrier = JsonConvert.DeserializeObject<cCarrier>(jObj["carrier"].ToString());
 
-                DbgMsg = string.Format("배송상태 확인 중");
+                //DbgMsg = string.Format("배송상태 확인 중");
 
 #if JSON_SERIALIZE
                     // Serialize (Object -> JsonString)
@@ -340,25 +421,166 @@ namespace GlaxayDeleveryTrackerApp
                 DbgMsg = string.Format("배송상태 확인 완료");
                 //DbgMsg = tmpSccsMessage;
                 return true;
+
+    }
+#endif//#if SecondMethod
+
+#if ThirdMethod
+        public bool JsonParse(string responseBody)
+        {
+            JObject jo = JObject.Parse(responseBody);
+
+            var Err = jo.SelectToken("message");
+            if (!String.IsNullOrEmpty(Err.ToString())) //잘못된 운송장
+            {
+                DbgMsg = String.Format("잘못된 운송장");
+                return false;
             }
 
+            //배송상태
+            var a = jo.SelectToken("state"); 
+            var cnt = a.Count(); 
+            
+            if(cnt != 0) //배송 상태
+            {
+                foreach (var item in a)
+                {
+#if SAMPLE
+                    //var key = item.SelectToken("key").ToString(); 
+                    //var category = item.SelectToken("category").ToString(); 
+                    //var text = item.SelectToken("text").ToString(); 
+                    var items = item.SelectToken("items"); 
+                    if (items != null) 
+                    { 
+                        foreach (var token in items) 
+                        {
+                            //var name = String.Format("{0}", token.SelectToken("name")); 
+                            //var value = String.Format("{0}", token.SelectToken("value"));
+                            //DbgMsg = String.Format("{0}", token.SelectToken("text"));
+                        } 
+                    } 
+#endif
+                    //배송 상태
+                    DbgMsg = String.Format("{0}", item.SelectToken("text"));
+                    return true;
+                }
+            }
+            else //잘못된 운송장
+            {
+                DbgMsg = String.Format("잘못된 운송장");
+                return false;
+            }
+
+            DbgMsg = String.Format("응답 파싱 오류");
+            return false;
+        }
+#endif
+        public bool JsonParse(string responseBody)
+        {
+            JObject jo = JObject.Parse(responseBody);
+
+            var Err = jo.SelectToken("message");
+            if (!String.IsNullOrEmpty(Err.ToString())) //잘못된 운송장
+            {
+                DbgMsg = String.Format("잘못된 운송장");
+                return false;
+            }
+
+            //배송상태
+            var a = jo.SelectToken("state").SelectToken("text");
+            var Cnt = a.Count();
+
+            if(Cnt != 0)
+            {
+                //배송 상태
+                DbgMsg = String.Format("{0}", a.ToString());
+                return true;
+            }
+            else
+            {
+                DbgMsg = String.Format("잘못된 운송장");
+                return false;
+            }
+            
+            DbgMsg = String.Format("응답 파싱 오류");
+            return false;
         }
 
-        public  bool Call_trackerDeiveryAPI()
+        public async Task<bool> Call_trackerDeiveryAPI()
         {
 #if true
-            Uri uriStr = new Uri(string.Format("https://apis.tracker.delivery/carriers/" + companyCode +
-                                                    "/tracks/" + et_number.Text, string.Empty));
-#else
-            String uriStr = "https://apis.tracker.delivery/carriers/kr.cvsnet/tracks/11111";
+#if TEMP
+            string address = "1400,Copenhagen,DK";
+            string GoogleMapsAPIurl = "https://maps.googleapis.com/maps/api/geocode/json?address={0}&key={1}";
+            string GoogleMapsAPIkey = "MYSECRETAPIKEY";
+            string requestUri = string.Format(GoogleMapsAPIurl, address.Trim(), GoogleMapsAPIkey);
 #endif
 
-            //Console.WriteLine($"API Url: {urlstr}");
+#if true
+            string Carrier = companyCode;
+            string TrackNumber = et_number.Text;
+            string TrackAPIurl = "https://apis.tracker.delivery/carriers/{0}/tracks/{1}";
+            string uriStr = string.Format(TrackAPIurl, Carrier.Trim(), TrackNumber.Trim());
+#endif
+#else
+
+#if true
+            String uriStr = "https://apis.tracker.delivery/carriers/" + companyCode +
+                                                        "/tracks/" + et_number.Text;
+#if false
+                    Uri uriStr = new Uri(string.Format("https://apis.tracker.delivery/carriers/" + companyCode +
+                                                            "/tracks/" + et_number.Text, string.Empty));
+#endif
+#else
+                String uriStr = "https://apis.tracker.delivery/carriers/kr.cvsnet/tracks/11111";
+#endif
+#endif
+            //Console.WriteLine($"API Url: {uriStr}");
 
             // Call asynchronous network methods in a try/catch block to handle exceptions.
             try
             {
 #if true
+                // Works fine                
+                using (HttpResponseMessage response = await client.GetAsync(uriStr))
+                {
+                    DbgMsg = string.Format("HTTP Get Req.");
+                    //if (response.IsSuccessStatusCode)
+                    if(true)
+                    {
+                        DbgMsg = string.Format("Req Success.");
+                        responseBody = response.Content.ReadAsStringAsync().Result;
+
+                        DbgMsg = string.Format("Json parse.");
+                        return JsonParse(responseBody);
+                    }
+                    else
+                    {
+                        DbgMsg = string.Format($"Req. Fail-{response.IsSuccessStatusCode}");
+                        return false;
+                    }
+                }
+                return false;
+
+#if TEMP
+                HttpResponseMessage response = await client.GetAsync(uriStr);
+                DbgMsg = string.Format("HTTP Get Req.");
+                if (response.IsSuccessStatusCode)
+                {
+                    DbgMsg = string.Format("Req Success.");
+
+                    // Parse the response body. Blocking!
+                    responseBody = await response.Content.ReadAsStringAsync();
+
+                    DbgMsg = string.Format("Json parse.");
+                    return JsonParse(responseBody);
+                }
+                DbgMsg = string.Format($"Req. Fail-{response.IsSuccessStatusCode}");
+                //DbgMsg = string.Format("HTTP Req. Fail");
+                return false;
+#endif
+
+#elif BlockingCall
                 HttpResponseMessage response = client.GetAsync(uriStr).Result; //Blocking Call!
                 DbgMsg = string.Format("HTTP Get Req.");
                 if (response.IsSuccessStatusCode)
@@ -366,7 +588,7 @@ namespace GlaxayDeleveryTrackerApp
                     DbgMsg = string.Format("Req Success.");
 
                     // Parse the response body. Blocking!
-                    string responseBody = response.Content.ReadAsStringAsync().Result;
+                    responseBody = response.Content.ReadAsStringAsync().Result;
 
                     DbgMsg = string.Format("Json parse.");
                     return JsonParse(responseBody);
@@ -386,8 +608,8 @@ namespace GlaxayDeleveryTrackerApp
             }
             catch (HttpRequestException e)
             {
-                Console.WriteLine("\nException Caught!");
-                Console.WriteLine("Message :{0} ", e.Message);
+                //Console.WriteLine("\nException Caught!");
+                //Console.WriteLine("Message :{0} ", e.Message);
                 
                 DbgMsg = string.Format("요청 에러가 발생");
                 
@@ -425,13 +647,12 @@ namespace GlaxayDeleveryTrackerApp
             //Console.WriteLine($"track_number: {trackNumber}");
 
 
-            //bool callRst = await Call_trackerDeiveryAPI();
-            bool callRst = Call_trackerDeiveryAPI();
+            bool callRst = await Call_trackerDeiveryAPI();
+            //bool callRst = Call_trackerDeiveryAPI();
             if (callRst == false)
             {
                 //await DisplayAlert("안내", "해당 운송장이 존재하지 않습니다!", "확인");
                 trackState.Text = DbgMsg;
-                return;
             }
             else
             {
@@ -440,7 +661,6 @@ namespace GlaxayDeleveryTrackerApp
                 
                 //trackState.Text = trackRstState.Ptext;
                 trackState.Text = DbgMsg;//"배송상태 확인 완료"
-                return;
             }
 
         }//bt_search_Clicked()

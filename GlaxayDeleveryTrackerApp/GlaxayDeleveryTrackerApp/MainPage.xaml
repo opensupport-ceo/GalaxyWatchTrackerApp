@@ -12,7 +12,7 @@
                 <StackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="        배송회사를 선택하고" />
                     <Label Text="      운송장번호를 입력하세요" />
-                    <Picker x:Name="pk_company" Title="배송회사" SelectedIndexChanged="Picker_SelectedIndexChanged_deleivery" >
+                    <Picker x:Name="pk1_company" Title="배송회사" SelectedIndexChanged="Picker_SelectedIndexChanged_deleivery" >
                     <!--    
                         <Picker.Items>
                             <x:String>DHL</x:String>
