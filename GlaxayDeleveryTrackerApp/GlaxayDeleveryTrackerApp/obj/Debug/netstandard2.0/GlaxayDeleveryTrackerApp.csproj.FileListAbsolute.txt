@@ -1,0 +1,12 @@
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\bin\Debug\netstandard2.0\GlaxayDeleveryTrackerApp.deps.json
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\bin\Debug\netstandard2.0\GlaxayDeleveryTrackerApp.dll
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\bin\Debug\netstandard2.0\GlaxayDeleveryTrackerApp.pdb
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\obj\Debug\netstandard2.0\GlaxayDeleveryTrackerApp.csprojAssemblyReference.cache
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\obj\Debug\netstandard2.0\GlaxayDeleveryTrackerApp.AssemblyInfoInputs.cache
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\obj\Debug\netstandard2.0\GlaxayDeleveryTrackerApp.AssemblyInfo.cs
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\obj\Debug\netstandard2.0\GlaxayDeleveryTrackerApp.csproj.CoreCompileInputs.cache
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\obj\Debug\netstandard2.0\GlaxayDeleveryTrackerApp.dll
+E:\Users\bini\Tizen-Xamarin.Forms\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\obj\Debug\netstandard2.0\GlaxayDeleveryTrackerApp.pdb

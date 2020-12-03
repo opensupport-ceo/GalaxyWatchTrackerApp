@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeleveryTrackerApp", "GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp\DeleveryTrackerApp.csproj", "{FBBE2A54-B5C3-4165-9DF4-8F6BE6FCC3E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeleveryTrackerApp.Tizen.Mobile", "GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\DeleveryTrackerApp.Tizen.Mobile.csproj", "{90725A2A-4D1D-47DB-AD70-8D31525F478A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeleveryTrackerApp.Tizen.TV", "GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.TV\DeleveryTrackerApp.Tizen.TV.csproj", "{CE1B0EDF-CDBC-4A1F-97B5-CA6D6575F434}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeleveryTrackerApp.Tizen.Wearable", "GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Wearable\DeleveryTrackerApp.Tizen.Wearable.csproj", "{020F237A-E37E-4575-8B09-DA9B90BE8D8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBBE2A54-B5C3-4165-9DF4-8F6BE6FCC3E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBBE2A54-B5C3-4165-9DF4-8F6BE6FCC3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBBE2A54-B5C3-4165-9DF4-8F6BE6FCC3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBBE2A54-B5C3-4165-9DF4-8F6BE6FCC3E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90725A2A-4D1D-47DB-AD70-8D31525F478A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90725A2A-4D1D-47DB-AD70-8D31525F478A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90725A2A-4D1D-47DB-AD70-8D31525F478A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90725A2A-4D1D-47DB-AD70-8D31525F478A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE1B0EDF-CDBC-4A1F-97B5-CA6D6575F434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1B0EDF-CDBC-4A1F-97B5-CA6D6575F434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1B0EDF-CDBC-4A1F-97B5-CA6D6575F434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE1B0EDF-CDBC-4A1F-97B5-CA6D6575F434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{020F237A-E37E-4575-8B09-DA9B90BE8D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020F237A-E37E-4575-8B09-DA9B90BE8D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020F237A-E37E-4575-8B09-DA9B90BE8D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{020F237A-E37E-4575-8B09-DA9B90BE8D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {474D1529-C93E-4659-A38F-D70052CBE000}
+	EndGlobalSection
+EndGlobal

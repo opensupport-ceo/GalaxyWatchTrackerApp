@@ -1,0 +1,259 @@
+<Signature Id="DistributorSignature" xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+    <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+    <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
+    <Reference URI="tizen-manifest.xml">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>RaJlPZJoaTIddao1RjaJkotMW95EFH/ci/N4Ih/TJ6yKMoATjsSXUSqwNNT7lXhY1gopXTXH74v8hpLuc1mWIQ==</DigestValue>
+    </Reference>
+    <Reference URI="shared%2Fres%2FTizenTracker-splash.png">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>gRjQsRFPg/+M/sMygTBuTYWeI35OS6jnmY+U6BhuM97qUCGO9OiijuyOy/aBax6Aug55LCvyY2U3bBIiKCUg7g==</DigestValue>
+    </Reference>
+    <Reference URI="shared%2Fres%2FTizenTracker.png">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>VPiLUV4oXHbzrFSaLIG9P9joJDezmjVckqV/XpN+aSRgYi1Lkpmbchn2zHjc7AC6E81CWREg9ME2/uucXWwu2A==</DigestValue>
+    </Reference>
+    <Reference URI="shared%2Fres%2FGlaxayDeleveryTrackerApp.Tizen.Wearable.png">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>cI5amtjSdPPxN2ZpqYaAXIUjxKMUbzwJwFs/Jd7nFo+/nB0gpKGysBrP4JLzlhEO0bXuNApr5FJzXAIfTUNX3g==</DigestValue>
+    </Reference>
+    <Reference URI="GlaxayDeleveryTrackerApp.Tizen.Wearable.deps.json">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>I47JBbEpD6vucfddeWtjTb3ickbNnE9fEpHO89LEoEdnhWEjiLS5IX5JtAcT3/ousBi/8KwW41d0wApqT1JjEw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fzh-Hant%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>MR+nrDSYQ27WOaubF/22m/Q+i6hXLlcjXAGFqCEH6rFnLYtbb5e12pIPKApEtpZkCXQWBCHsvy9OS/YZ8lpkZw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fzh-Hant%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>FPYWsg2IBHMVPW7cex2wPHSNCp50nL49L7e7BEbHQw5MROCpePWw4djDYV/CR7XOVnzAqv1HC0FhFImJNYR0hg==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fzh-Hans%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>FHhNHLG60mtbWBYJx76lpxXuy0t2/XhFrJg7IOvCwIoVi3oRo/jYFE6PjPDuTDvKuHciPeOfHLbPhtMWy8mavA==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fzh-Hans%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>RXnvwMDUBOFShVxuWAAr8oc2PIjLbwCm6w6PNVHr3N9Qp8OLQ5sf0ciEYObYldqq4xUCR1O+lF/Ew7XbEVD+yg==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FXamarin.Forms.Xaml.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>yppjtAvNtNbbBQezcAOq9AbIZHPbW9e7+6ZoNhEg0/S9VYH5yQ0MOBZRwnASBxOgEs1+Uxi3H2b84pFfnROCiw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FXamarin.Forms.Platform.Tizen.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>RfgtQEDTtCeUAvumVEnFocbLglV8iW39v2vvc1MD2OgRR4rec2vQouEcrEgJtajqlJb+OjMKKo5a2pMwM/zjMg==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FXamarin.Forms.Platform.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>MtSYny4pm2qdzKPMso2Dfb7KcbqL1B51fo5kjsgxlBuNU4TtgVQbEP3NbOn0nae1QM5feF1aQXNu3orAQqreBA==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FXamarin.Forms.Core.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>b+eL81clv1S94JbtABy/LFp+DaXJNi0V+wvEArdsWQk75xb2RUD5io5ndtjuWcqu5vGrkiqzEbVTxBDSE+NAYw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Ftr%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>N2wAlcyPYStSQw4JpZ0DtwWhSfUBJwYJfz9jMiZ/WCTn4VAD6oRM/dMDKEehL3zx1B0NTGNkRYePh+Oybxvh1Q==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Ftr%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>pegbZUYsXtDOu3wlLC20tQnOtRw4WkS8nFhH0n24QtWIOtrsfBd3P/G1pXhdUj84Qj1nGAhgy3SAghyOQ0wKCQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FTizenHotReload.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>iQIwkkajvsnyCq4a1ynQ+RIMkJmCii+UNwXdGu2hZfSJQqwBCdJMoVj9wTkRSjfs1//c0BGAZjNoNQ79hk3VQw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FSystem.Text.Encoding.CodePages.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>GeKKNGYypyuVQU0gIlh6eMDhF9A9xNA/TvkA46rGh5USBtnwMh+md6eg7PfclKq9cJjnyzf536yFin+dNeT5Sw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FSystem.Runtime.CompilerServices.Unsafe.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>InaNkoOKAGFDVSD6rnq5qHRwUHdt0aygD/h0pRviEZqJh2xBwbVA3GA1SydBVA4cqI6ORH2B5VXuU1pbkvjqBg==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fruntimes%2Fwin%2Flib%2Fnetstandard2.0%2FSystem.Text.Encoding.CodePages.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>3AOapZCYNF/VH46nW6SrcQNx4ZJiS5g4KBi2Z92z4tHkG4wtKKWoO3jgd0JIvJ0sZIMBz+7DuaFvvUV8ZgcStw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fru%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>2+j/3sdlUjLQQCQntxaa+6ZL1A+OmQb/ByJRmg23HQXl6RVNVT+ZwC51lqzjJXyurF5kZCpw2zu4QvY6mLH+wA==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fru%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>IQs2GEWPjvySkdzSVOR79iHED+O7rv1l3QvFCHE/CH75kp8fHViZ0BjZPo09c6klZundMXQYtA01VY/JBzZe5Q==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fpt-BR%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>T6Wb8OZE9Zvn83V6OOwofwVAGDl/p2oZTl5FRm/RxgnCRXCftQCy3qx51VdooNy0xLThejwU3XgsdyL3kstR0Q==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fpt-BR%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>ggWcVm58k7BZ1FPFArL2zQWTNlAOIvFGF5W19WsTsy5+Dat8Ow8Ijki6lKRG57PJntMuIduvVjy67W3u7tCLuQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fpl%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>7uusghMFpV8HdupCXgGRnPuC6YRY7TDW82sKBg4FtFdwy/Fh1+M65ajkXq94Jv8NzwXDDmmqGPDydZ5FlWkesQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fpl%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>C5mDvGSGcch+/XDk5eXd35WpsSCE5rrmmjXzsWOwv90Fml+DlhgkmxiSwLzQPTDf2H1Z/e0U7pcTC6i0r+Ya3w==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FMicrosoft.CodeAnalysis.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>OYfhmGUWpMjVgLqBQD+YCV0lZoynkV5Bd1TMOBEhx9+FQNmFB8247qrKbLqTI7Y5+SzOFQ23fir5JyQV47sdCQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FMicrosoft.CodeAnalysis.CSharp.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>mn3RgBDBsUnyUzKvymjekPLt47NNUKFoSzY9tJUAbyXKVrH715F3F3YbqCuWDnwqbODSrfwubptdYFX6g7ScjQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fko%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>k6Bw8H6xWjIU6Mj0sxNhSrtS8WXB4O1Tgo2Mh/kvvUydoNBx9sH3Zf6gncTHkj+nIZ7Cuq4exSR+TXjweeJnEg==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fko%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>dGTXrcegb9no+2Vqe8km0RobqiX4nef+DcDiQhFIDSACEuZJkIaIYGi3O6ARTdf/0ZUKtoFZylms4qQuhbpw5w==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fja%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>Daz7CKgZSOsMK20tVSerr2JDYXyj0emLFF3tYsVuNBA7ApUQuHAyIErhfqO+GUWe1Yx2VaFPI42SWsyauBdVKA==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fja%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>Tsd/pzzkZrOEEYJ92T5d6iwp4IOE9iNKzkx0wrBCyzPvz77dcCYjTEPrw8uRYw8hKK+q0Z7f8UCPbsj6a2zWKQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fit%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>CZUdxPMcmJ/4CRcXKDDvlR2atKl0z7yqv5WVH1p1mv+nOO3A/LZfB9nq0OZnQntQpGTluhmb0zALpeLbo2POtg==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fit%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>AMBV2t00SY5LnpRXzxyZ+9ENqyH0j19shUDaxTff70s1G9+SKqabMjdrAy06Q7Vim0+xq2/2HksRn/NjIuY9cQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FGlaxayDeleveryTrackerApp.Tizen.Wearable.pdb">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>8BTLC8BhV09qNCMMI6lGnDYHcsGRv2JGW65pT6R6nNnAYLtwMwMtyS1TU0xNSyFbLSODLXs60bRRZyCcUbO6bg==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FGlaxayDeleveryTrackerApp.Tizen.Wearable.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>iZkhJVA8oYG6ZErlBcOLVSqrd+T5CXJFQo2UiHO6lHtrGlYXA17S9s1i5B74Vgx727YjnoErbH7KIO7SCkPk1w==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FGlaxayDeleveryTrackerApp.pdb">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>JEsC/lWh07QxXzJ1EuORfXrZSUKAZNTBgUWP12IG64Tvs8fdEJS1t0mtHVvMCy2dXOk0/4gfQxW7qINLwSsXRw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FGlaxayDeleveryTrackerApp.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>vGp0qPdvuIYipuV7YcUKad6kwhcVMylMjk0dq3c3ptMPEAi7+N6+CF0/9xOK0iTQRfPcyCKiBKl7F3LBkqP+GA==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Ffr%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>4Eir9G4bpnKMPZzEJI6n8S60G5ohFHvu4PJRoLu+EofhLzDLVTAcDtLxncCRcR9dt3UiYzqvd7oN3XjLY58HTg==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Ffr%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>BfkloLVd29TaWca/s3/znGvo1sX/UYrUMNp08nKDI0GRtgQEjNgFlVOjxDH5HZ8mDUzg87HcaHt9Lfr9Qi++SQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fes%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>gPazUq6l3I6pkJ7/Fxk1Flx1s0lOp7WKMIM4ik/FdMtx1UTOLkg8zCEzNVD4a1OZ+IurXlGOfnKSTOLJwjf1cQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fes%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>bPlOe5++H69IvKVI4wsDmjHvBkb2vuvszruLop9NIz8aPLx9zW2v74tIKaLhqVN34ggRfUglglkprThmHucXWQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fde%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>cDtQUmD1R0MxZnMSXPfsDw2cJioeuzm/6p2J+wK61vmimcDR6QH+ygGdgqiHtBomT7ckZamKKo01taUJThM5HQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fde%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>/Xe+jI7wy1TOFsB4jfg88WBgRgsaN9Y6sqxgCiSKbztk9Wnd7SiQv22CFSjmL/41Kft92gx0lhBizcYQOXKcbA==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fcs%2FMicrosoft.CodeAnalysis.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>58DcIqw8rOHN38iMNDRws8flCV00ch2V3vlY4UyTj/aVkRxQ/AxWERgmapZDTi4Z9qnpC9D/YPqtjpoVealxdw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2Fcs%2FMicrosoft.CodeAnalysis.CSharp.resources.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>VJSMD9iQ/AnP2hcxKVXQgw9qDtBE+EHtJSljorvbidAJgKyuO24nC+AIJMdxpsEB9kGgSJQPl33ACt6e+CoD9g==</DigestValue>
+    </Reference>
+    <Reference URI="author-signature.xml">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>0xwq//e/nNAVxEd9yf/ODWnpzDq/tmY6NLWpOq72sBVXapSUX0iuX9y+BDk/VL1yhWf4giRbnoh0KD2ZGcqwYg==</DigestValue>
+    </Reference>
+    <Reference URI="#prop">
+      <Transforms>
+        <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      </Transforms>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>5YPt7Bw2TSPBQKkKOFPZNFjzt+iifSVhnCWKlLr+/5f/JEGy9SqkT543A8UCz08tYLBNiokj1/ZsXG4PeC92qQ==</DigestValue>
+    </Reference>
+  </SignedInfo>
+  <SignatureValue>
+axHwdgQw5bdWtbmjDRar9rdY9dW6ULk0iUBMlWBOFFinF0GkBTY8wtLZspeIvq9ouYyvVp7VcW9k
+CpqkjNbbIhn7kmo+Fs9K7TauytKQHUL/O+gjVL0gAqb0aYUREYDcn8P2KCmhcNmjsiuw0MZh9YxB
+fS4rF0m4sOZOWUC/hseg5nh14NAKPnMj/UegAqDk6vlJGo/Jp0HmkUjRrL75FY0rxTH9vh/r+Z8l
+U70ElH6hxn1xbInkFn3K292QFOhvr1xm06qi6Sb7HkJ1QaCvmCDtKRNcXcthFHi6zQLE0xRw8WPW
+tYtEUQkksalOYdAi8oypoH/UAyjcwR3WzHuF5Q==
+</SignatureValue>
+  <KeyInfo>
+    <X509Data>
+      <X509Certificate>
+MIIDpjCCAo6gAwIBAgIBZTANBgkqhkiG9w0BAQ0FADCBnjELMAkGA1UEBhMCS1IxFDASBgNVBAgM
+C1NvdXRoIEtvcmVhMQ4wDAYDVQQHDAVTdXdvbjEmMCQGA1UECgwdU2Ftc3VuZyBFbGVjdHJvbmlj
+cyBDby4sIEx0ZC4xDzANBgNVBAsMBk1vYmlsZTEwMC4GA1UEAwwnU2Ftc3VuZyBUaXplbiBERVZF
+TE9QRVIgUHVibGljIENBIENsYXNzMB4XDTIwMTEzMDE2MDMxMVoXDTIxMTEzMDE2MDMxMVowcjER
+MA8GA1UEAwwIVGl6ZW5TREsxCTAHBgNVBAsMADEJMAcGA1UECgwAMQkwBwYDVQQHDAAxCTAHBgNV
+BAgMADEJMAcGA1UEBhMAMSYwJAYJKoZIhvcNAQkBFhdjZW8ub3NmYWN0b3J5QGdtYWlsLmNvbTCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIXSU8SJVBIXOzgk6lAOxuuPaZXgGNwXeyeO
+aoFjJrD1hD3dokiun+y0yXsG3+bbSmbeJD+OoQDGHMaw//dyhk1N0kHetSKzje7tMPew33hFwFSR
+NtpC+Iwl/j7D8PV+lDo5rvgiw2HlPGbgVP5+amu0GuVSnEWT6S+9UHIH09RHuD0tDvEEx257xElX
+Yfze0tWfbj4L0r1xyHaLz+BU5M44/jAjYZLpXQ8F9Z+CYAU/jBKD1+rI+yTaWzCZggypqKROp3Xj
+2taE+TEaVA7s2rjuakIKAECExhP0AzgaheBCsDEdTdBlYTqQoArr2TDKFPLS85iQ2+V5wwwBzVi6
+A/kCAwEAAaMaMBgwCQYDVR0TBAIwADALBgNVHQ8EBAMCB4AwDQYJKoZIhvcNAQENBQADggEBAJiq
+Jp38owk243YQfoQUjncna2PIQXpugH+D1QPKqpZNmesxCB0Dctb3KqcSC7g9iZNDiv+jRmgh5plF
+hcDGQLj5pb4fhoG+x8IP66pobt+VqpH3v9hHwYLhJth0jUaPha81pJCJOJaW/Qq4+0aipvIgA9zG
+PqQnnRFctmE46Qe2kmgoW+eogL2ErcFOv74DvnwJmbS4UZ/zV/Nrdze/lSzRa1zI3+qttcRWEOqi
+rVaP59h5sNL3e3iZL4onB1H/CRw7qIUNUcpfDBoWWg2uHyJfsOAvYrof5Zg+kbfKVK7lgOVqT9mV
+Ob+dNUfjkJxtUdDxZiaYEHHoQbA1Ohae0FQ=
+</X509Certificate>
+      <X509Certificate>
+MIIDuzCCAqOgAwIBAgICL+cwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAktSMRQwEgYDVQQI
+DAtTb3V0aCBLb3JlYTEOMAwGA1UEBwwFU3V3b24xJjAkBgNVBAoMHVNhbXN1bmcgRWxlY3Ryb25p
+Y3MgQ28uLCBMdGQuMTIwMAYDVQQDDClTYW1zdW5nIFRpemVuIERFVkVMT1BFUiBQdWJsaWMgUm9v
+dCBDbGFzczAeFw0xMzEyMzAxNTAxNDdaFw0yODEyMjYxNTAxNDdaMIGeMQswCQYDVQQGEwJLUjEU
+MBIGA1UECAwLU291dGggS29yZWExDjAMBgNVBAcMBVN1d29uMSYwJAYDVQQKDB1TYW1zdW5nIEVs
+ZWN0cm9uaWNzIENvLiwgTHRkLjEPMA0GA1UECwwGTW9iaWxlMTAwLgYDVQQDDCdTYW1zdW5nIFRp
+emVuIERFVkVMT1BFUiBQdWJsaWMgQ0EgQ2xhc3MwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+AoIBAQCkqW9d0zO5NFOc7u164DKe9Yx+yEgUnsbhnJasqHaqT71qaMxyCOjyysZi7gGycDcgmLcU
+tr2wSMTGWPibK8SrJ8bV/J1cy9nTpljM3s+lbPIVVxZeufhJkU79tXImHLolERd0vui+rj0Xpd9O
+zlyNTRt0+PWVT1taWcbfHL7pUD25hMkTc8C3bC+dUoT1/RhCkXgmUvIor3EnnU0rBtAl4qNtg5y1
+7RLT8dyicieAHCcW923YC/ngMZxnBjbL2Ht1RBUvrL6K3X5+l0VeF4qC3g7TKm/a/SGjq12ZD4sc
+7rglzjSNlTVSGag6/2WkqxE6HheEBWaloYOdauzwydFNAgMBAAGjEDAOMAwGA1UdEwQFMAMBAf8w
+DQYJKoZIhvcNAQELBQADggEBAG88wKjKeTbj5I6wMEvRihd+gWrESJX3bXUSlHWjUfYKcvg3GzM9
+cdooscqJdYgN8ezQuYiJQRk7BaPHSlPGkchsPUjvSM6WvIn9IT+VsEuVBrZNbZMSv6lM6wNig3TE
+h2OxFTW6Bt8mCZB74EP2wb+39Fr5aJwWvmkxQjct3/O+GYPQhe0Lu1qpbbMhzafYYybSmO+om02V
+cTWyJ/vtLUNyGfN7aHyBm6PFE5piAfpBaO9Az+zWil1HOsnzu1tGGnyV6IzQ/UiIo5P2sD8I5lEO
+Xdf9Eicy9y5z2Ci2zrmDcAGWL8o5wOWrCqML2ijximFzyQ/swlMC9xBIX9RCFws=
+</X509Certificate>
+    </X509Data>
+  </KeyInfo>
+  <Object Id="prop">
+    <SignatureProperties xmlns:dsp="http://www.w3.org/2009/xmldsig-properties">
+      <SignatureProperty Id="profile" Target="#DistributorSignature">
+        <dsp:Profile URI="http://www.w3.org/ns/widgets-digsig#profile" />
+      </SignatureProperty>
+      <SignatureProperty Id="role" Target="#DistributorSignature">
+        <dsp:Role URI="http://www.w3.org/ns/widgets-digsig#role-distributor" />
+      </SignatureProperty>
+      <SignatureProperty Id="identifier" Target="#DistributorSignature">
+        <dsp:Identifier />
+      </SignatureProperty>
+    </SignatureProperties>
+  </Object>
+</Signature>

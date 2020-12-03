@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.opensupport.DelieveryTracker" version="1.0.0" api-version="5" xmlns="http://tizen.org/ns/packages">
+    <author email="ceo.osfactory@gmail.com" href="https://freeNanum.github.io/market">Jaehong Park</author>
+    <profile name="wearable" />
+    <ui-application appid="com.opensupport.DelieveryTracker" exec="GlaxayDeleveryTrackerApp.Tizen.Wearable.dll" multiple="false" nodisplay="false" taskmanage="true" type="dotnet" splash-screen-display="true" launch_mode="single">
+        <label>DeliveryTracker</label>
+        <icon>tizen-splash-ic_launcher.png</icon>
+        <metadata key="http://tizen.org/metadata/prefer_dotnet_aot" value="true" />
+        <splash-screens>
+            <splash-screen app-control-operation="" dpi="xxhdpi" indicator-display="true" orientation="portrait" src="icon-messages-app-store-1024x1024.png" type="img" />
+        </splash-screens>
+    </ui-application>
+    <shortcut-list />
+    <privileges>
+        <privilege>http://tizen.org/privilege/internet</privilege>
+    </privileges>
+    <dependencies />
+    <provides-appdefined-privileges />
+</manifest>

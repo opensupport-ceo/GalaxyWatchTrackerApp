@@ -1,0 +1,12 @@
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\bin\GlaxayDeleveryTrackerApp.Tizen.Mobile.dll
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\bin\Newtonsoft.Json.dll
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\bin\Xamarin.Forms.Core.dll
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\bin\Xamarin.Forms.Platform.Tizen.dll
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\bin\Xamarin.Forms.Platform.dll
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\bin\Xamarin.Forms.Xaml.dll
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\bin\DeleveryTrackerApp.dll
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\bin\DeleveryTrackerApp.pdb
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\DeleveryTrackerApp.Tizen.Mobile.deps.json
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\shared\res\GlaxayDeleveryTrackerApp.Tizen.Mobile.png
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\tpkroot\tizen-manifest.xml
+E:\Users\bini\Tizen-Xamarin.Forms\GalaxyDeleveryTrackerApp\GlaxayDeleveryTrackerApp\GlaxayDeleveryTrackerApp.Tizen.Mobile\bin\Release\tizen50\org.tizen.example.GlaxayDeleveryTrackerApp.Tizen.Mobile-1.0.0.tpk
